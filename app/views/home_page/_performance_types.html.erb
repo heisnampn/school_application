@@ -1,0 +1,10 @@
+<h1> Performance Types </h1>
+
+<% @performance_types.each do |performance_type| %>
+  <%= form_with(model: performance_type) do |form| %>
+    <%= form.text_field :name, value: performance_type.name, disabled: true %>
+    <%= form.text_field :min_value, value: performance_type.max_value %>
+    <%= form.text_field :max_value, value: performance_type.max_value %>
+    <%= form.submit 'Reset Range' %>
+  <% end %>
+<% end %>

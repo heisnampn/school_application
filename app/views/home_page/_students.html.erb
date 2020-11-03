@@ -1,0 +1,15 @@
+
+<h1> Students </h1>
+<table>
+  <tr>
+    <th>Student Name</th>
+    <th>Student Email</th>
+    <th>Action</th>
+  </tr>
+  <% @students.each do |student| %>
+   <tr>
+      <td><%= student.name %></td>
+      <td><%= student.email %></td>
+      <td> <%= link_to 'Rate Student',new_user_student_rating_path(student)%> </td>
+    </tr>
+  <% end%>

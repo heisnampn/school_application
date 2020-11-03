@@ -1,0 +1,4 @@
+<%= form_with(model: [@student, @rating]) do |form| %>
+  <%= form.select :rating, (1..10).to_a, :prompt => 'Select One' %>
+  <%= form.submit "Rate" %>
+<% end %>

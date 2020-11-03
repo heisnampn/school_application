@@ -1,0 +1,14 @@
+development:
+  DATABASE_NAME: xxxxxxxx
+  DATABASE_USER_NAME: xxxxxxxx
+  DATABASE_PASSWORD: xxxxxxxx
+
+test:
+  DATABASE_NAME: xxxxxxxx
+  DATABASE_USER_NAME: xxxxxxxx
+  DATABASE_PASSWORD: xxxxxxxx
+  
+production: 
+  DATABASE_NAME: xxxxxxxx
+  DATABASE_USER_NAME: xxxxxxxx
+  DATABASE_PASSWORD: xxxxxxxx 

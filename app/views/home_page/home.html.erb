@@ -1,0 +1,9 @@
+<% if current_user.head_master? %>
+  <%= render partial: 'performance_types', locals: {performance_types: @performance_types} %>
+<% end %>
+<% if current_user.student? %>
+  <%= render partial: 'rating', locals: {rating: @rating} %>
+<% end %>
+<% if current_user.teacher? %>
+  <%= render partial: 'students', locals: {students: @students} %>
+<% end %>
