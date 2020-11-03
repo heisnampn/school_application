@@ -3,7 +3,7 @@ class StudentRatingsController < ApplicationController
   before_action :set_student	
 
   def new
-  	@rating = StudentRating.new
+    @rating = StudentRating.new
   end
 
   def create
