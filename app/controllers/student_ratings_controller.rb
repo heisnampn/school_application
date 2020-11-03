@@ -22,10 +22,6 @@ class StudentRatingsController < ApplicationController
     @student = User.find(params[:user_id])
   end
 
-  def build_student_rating
-    @student.student_rating
-  end	
-
   def student_rating_params
     params.require(:student_rating).permit(:rating)
   end 
